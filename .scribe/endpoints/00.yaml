@@ -1,0 +1,165 @@
+name: Endpoints
+description: ''
+endpoints:
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: api/links
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Создание короткой ссылки'
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      url:
+        custom: []
+        name: url
+        description: 'Must be a valid URL.'
+        required: true
+        example: 'http://kunze.biz/iste-laborum-eius-est-dolor.html'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      url: 'http://kunze.biz/iste-laborum-eius-est-dolor.html'
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/links/{code}/stats'
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Получение статистики по короткой ссылке'
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      code:
+        custom: []
+        name: code
+        description: ''
+        required: true
+        example: 4nnajb
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      code: 4nnajb
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: '{"code":"4nnajb","url":"http:\/\/sgghdfh\/dddddddd\/tttttttt\/aaaaaaaaaaaa","clicks":1,"created_at":"2026-06-06T11:31:49.000000Z"}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '59'
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: '{code}'
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Перенаправление по короткой ссылке'
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      code:
+        custom: []
+        name: code
+        description: ''
+        required: true
+        example: 4nnajb
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      code: 4nnajb
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 302
+        content: |-
+          <!DOCTYPE html>
+          <html>
+              <head>
+                  <meta charset="UTF-8" />
+                  <meta http-equiv="refresh" content="0;url='http://sgghdfh/dddddddd/tttttttt/aaaaaaaaaaaa'" />
+
+                  <title>Redirecting to http://sgghdfh/dddddddd/tttttttt/aaaaaaaaaaaa</title>
+              </head>
+              <body>
+                  Redirecting to <a href="http://sgghdfh/dddddddd/tttttttt/aaaaaaaaaaaa">http://sgghdfh/dddddddd/tttttttt/aaaaaaaaaaaa</a>.
+              </body>
+          </html>
+        headers:
+          cache-control: 'no-cache, private'
+          location: 'http://sgghdfh/dddddddd/tttttttt/aaaaaaaaaaaa'
+          content-type: 'text/html; charset=utf-8'
+          set-cookie: 'XSRF-TOKEN=eyJpdiI6IkJJWm93QnBQQnhFR2xLakE4b2ZEd2c9PSIsInZhbHVlIjoiRGJyMVZzd0Vjd3JqeG02MHFpNG42ZzBRdE9TNWhnV2tOdVYrM3d2ZUdUWGY1SklOLzNkTzNiTDJWLzFDQWpJVHIxYUZEWU11N1ZrUFRib1JlaUJDM0gxOXN5Vk94cWR6eEJhRmlqdnBJQVI5YmcxSnViOFVyRUlQbDBka3JMd1ciLCJtYWMiOiIxMzI5YWZjMGFiOTMxN2Y5YzVhMTNhMzkzOWI3MjcwNjFjMGU4MjcxYzRlODZhYTg2ZmEzODk4ZTc4OGY1MmYxIiwidGFnIjoiIn0%3D; expires=Sun, 07 Jun 2026 18:47:38 GMT; Max-Age=7200; path=/; samesite=lax; procontext_test_session=eyJpdiI6ImhDNFpqNmE4aGE3RTY2b0wwWlAxQWc9PSIsInZhbHVlIjoiNVU5K0RXQlRFWEE5QWxEbjY2ZnhQUStSbzBGdzZDK3hCTWdHNUVSNGpxRmF6STNzL0s3eFNkV2s1Y2pYN3VzSHRvN1BhWnUwdythZjBqdjU1c1hTd0tUVURldDY0L2hHTldUQjFjbXJjV2ZuSDNuZDVEYXFTVThITWIzdGpRbEwiLCJtYWMiOiJhYmVkZWFjNWZmMzQ2NmE0NjYzNTQwZjRlNWEzYWVmOTAwNGFjYWYzNmIxYTRmMjFhZTdkYTgwNDU3ZTM0NGRjIiwidGFnIjoiIn0%3D; expires=Sun, 07 Jun 2026 18:47:38 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+        description: null
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null

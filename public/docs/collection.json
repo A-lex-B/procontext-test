@@ -1,0 +1,183 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "http:\/\/localhost"
+        }
+    ],
+    "info": {
+        "name": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f API \u0441\u0435\u0440\u0432\u0438\u0441\u0430 \u043a\u043e\u0440\u043e\u0442\u043a\u0438\u0445 \u0441\u0441\u044b\u043b\u043e\u043a",
+        "_postman_id": "9405a9a7-9375-47ef-ad0e-1bcdb1bd6069",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Endpoints",
+            "description": "",
+            "item": [
+                {
+                    "name": "\u0421\u043e\u0437\u0434\u0430\u043d\u0438\u0435 \u043a\u043e\u0440\u043e\u0442\u043a\u043e\u0439 \u0441\u0441\u044b\u043b\u043a\u0438",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/links",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/links"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"url\":\"http:\\\/\\\/kunze.biz\\\/iste-laborum-eius-est-dolor.html\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "\u041f\u0435\u0440\u0435\u043d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u043f\u043e \u043a\u043e\u0440\u043e\u0442\u043a\u043e\u0439 \u0441\u0441\u044b\u043b\u043a\u0435",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": ":code",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/:code",
+                            "variable": [
+                                {
+                                    "id": "code",
+                                    "key": "code",
+                                    "value": "4nnajb",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "location",
+                                    "value": "http:\/\/sgghdfh\/dddddddd\/tttttttt\/aaaaaaaaaaaa"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "text\/html; charset=utf-8"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "XSRF-TOKEN=eyJpdiI6IkJJWm93QnBQQnhFR2xLakE4b2ZEd2c9PSIsInZhbHVlIjoiRGJyMVZzd0Vjd3JqeG02MHFpNG42ZzBRdE9TNWhnV2tOdVYrM3d2ZUdUWGY1SklOLzNkTzNiTDJWLzFDQWpJVHIxYUZEWU11N1ZrUFRib1JlaUJDM0gxOXN5Vk94cWR6eEJhRmlqdnBJQVI5YmcxSnViOFVyRUlQbDBka3JMd1ciLCJtYWMiOiIxMzI5YWZjMGFiOTMxN2Y5YzVhMTNhMzkzOWI3MjcwNjFjMGU4MjcxYzRlODZhYTg2ZmEzODk4ZTc4OGY1MmYxIiwidGFnIjoiIn0%3D; expires=Sun, 07 Jun 2026 18:47:38 GMT; Max-Age=7200; path=\/; samesite=lax; procontext_test_session=eyJpdiI6ImhDNFpqNmE4aGE3RTY2b0wwWlAxQWc9PSIsInZhbHVlIjoiNVU5K0RXQlRFWEE5QWxEbjY2ZnhQUStSbzBGdzZDK3hCTWdHNUVSNGpxRmF6STNzL0s3eFNkV2s1Y2pYN3VzSHRvN1BhWnUwdythZjBqdjU1c1hTd0tUVURldDY0L2hHTldUQjFjbXJjV2ZuSDNuZDVEYXFTVThITWIzdGpRbEwiLCJtYWMiOiJhYmVkZWFjNWZmMzQ2NmE0NjYzNTQwZjRlNWEzYWVmOTAwNGFjYWYzNmIxYTRmMjFhZTdkYTgwNDU3ZTM0NGRjIiwidGFnIjoiIn0%3D; expires=Sun, 07 Jun 2026 18:47:38 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 302,
+                            "body": "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" \/>\n        <meta http-equiv=\"refresh\" content=\"0;url='http:\/\/sgghdfh\/dddddddd\/tttttttt\/aaaaaaaaaaaa'\" \/>\n\n        <title>Redirecting to http:\/\/sgghdfh\/dddddddd\/tttttttt\/aaaaaaaaaaaa<\/title>\n    <\/head>\n    <body>\n        Redirecting to <a href=\"http:\/\/sgghdfh\/dddddddd\/tttttttt\/aaaaaaaaaaaa\">http:\/\/sgghdfh\/dddddddd\/tttttttt\/aaaaaaaaaaaa<\/a>.\n    <\/body>\n<\/html>",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "\u041f\u043e\u043b\u0443\u0447\u0435\u043d\u0438\u0435 \u0441\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043a\u0438 \u043f\u043e \u043a\u043e\u0440\u043e\u0442\u043a\u043e\u0439 \u0441\u0441\u044b\u043b\u043a\u0435",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/links\/:code\/stats",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/links\/:code\/stats",
+                            "variable": [
+                                {
+                                    "id": "code",
+                                    "key": "code",
+                                    "value": "4nnajb",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "59"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"code\":\"4nnajb\",\"url\":\"http:\\\/\\\/sgghdfh\\\/dddddddd\\\/tttttttt\\\/aaaaaaaaaaaa\",\"clicks\":1,\"created_at\":\"2026-06-06T11:31:49.000000Z\"}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "noauth"
+    }
+}

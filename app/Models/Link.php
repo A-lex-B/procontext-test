@@ -15,10 +15,6 @@ class Link extends Model
         'url'
     ];
 
-    protected $appends = [
-        'short_url'
-    ];
-
     protected function shortUrl(): Attribute
     {
         return Attribute::make(

@@ -17,6 +17,11 @@ class LinkResource extends JsonResource
         return [
             'code' => $this->code,
             'short_url' => $this->when($request->is('api/links'), $this->short_url),
+            $this->mergeWhen($request->is('api/links/*/stats'), [
+                'url' => $this->url,
+                'clicks' => $this->clicks,
+                'created_at' => $this->created_at
+            ]),
         ];
     }
 }

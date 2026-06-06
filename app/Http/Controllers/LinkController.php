@@ -20,4 +20,9 @@ class LinkController extends Controller
 
         return redirect()->away($link->url);
     }
+
+    public function stats(string $code)
+    {
+        return new LinkResource(Link::where('code', $code)->firstOrFail());
+    }
 }

@@ -19,4 +19,4 @@ use Illuminate\Support\Facades\Route;
     return $request->user();
 }); */
 
-Route::post('links', [LinkController::class, 'store']);
+Route::post('/links', [LinkController::class, 'store']);

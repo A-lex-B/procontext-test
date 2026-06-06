@@ -12,4 +12,12 @@ class LinkController extends Controller
     {
         return new LinkResource(Link::firstOrCreate(['url' => $request->url]));
     }
+
+    public function redirectShortLink(string $code)
+    {
+        $link = Link::where('code', $code)->firstOrFail();
+        $link->increment('clicks');
+
+        return redirect()->away($link->url);
+    }
 }

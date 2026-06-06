@@ -35,6 +35,8 @@ class Link extends Model
             } while (Link::where('code', $code)->exists());
             
             $model->code = $code;
+
+            $model->clicks = 0;
         });
     }
 }

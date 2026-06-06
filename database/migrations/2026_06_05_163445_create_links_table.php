@@ -16,7 +16,7 @@ return new class extends Migration
             $table->timestamps();
             $table->char('code', 6)->unique();
             $table->string('url')->unique();
-            $table->unsignedSmallInteger('clicks')->nullable();
+            $table->unsignedSmallInteger('clicks');
         });
     }
 
